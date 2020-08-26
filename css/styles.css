@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+    --font: "Nunito";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font-size: 10px;
+    font-family: var(--font), sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;   
+    letter-spacing: .1em;
+    word-spacing: .5em;
+}
+
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 2rem auto 0;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__track-container {
+    /* background: rgba(12, 112, 12, 0.4); */
+    /* padding: 1em; */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track {
+    list-style: none;
+    height: 100%;
+    transition: transform 250ms ease-out;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(231, 219, 80);
+    background: transparent;
+    border: none;
+    /* z-index: 1; */
+}
+
+.carousel__button--left {
+    left: -4em;
+}
+
+.carousel__button--right {
+    right: -4em;
+}
+
+.carousel__nav {
+    /* background: pink; */
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__indicator {
+    background: rgba(232, 232, 232, 0.3);
+    height: 15px;
+    width: 15px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 1em;
+}
+
+.carousel__indicator.current-slide {
+    background: rgba(232, 232, 232, 0.8);
+}
+
+ion-icon {
+    font-size: 2.5rem;
+}
+
+.is-hidden {
+    display: none;
+}

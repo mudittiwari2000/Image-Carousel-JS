@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js" defer></script>
+    <title>Vanilla JS Carousel</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Image Carousel</h1>
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <img class="carousel__image" src="http://unsplash.it/1024/728?random&gravity=center"
+                            alt="abstract">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="http://unsplash.it/1280/728?random&gravity=center" alt="cats">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="http://unsplash.it/1028/728?random&gravity=center"
+                            alt="nature">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+            <nav class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </nav>
+        </div>
+    </div>
+    <!-- <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> -->
+</body>
+
+</html>
